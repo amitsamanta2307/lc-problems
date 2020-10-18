@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCChallengeSolutions", "LCChallengeSolutions\LCChallengeSolutions.csproj", "{D2D28182-02ED-4519-8DC4-B407F59BA27D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCChallengeUnitTestProject", "LCChallengeUnitTestProject\LCChallengeUnitTestProject.csproj", "{2A8F2077-C8BF-46B0-9310-97719B632BA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2D28182-02ED-4519-8DC4-B407F59BA27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D28182-02ED-4519-8DC4-B407F59BA27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D28182-02ED-4519-8DC4-B407F59BA27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D28182-02ED-4519-8DC4-B407F59BA27D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8F2077-C8BF-46B0-9310-97719B632BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8F2077-C8BF-46B0-9310-97719B632BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8F2077-C8BF-46B0-9310-97719B632BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8F2077-C8BF-46B0-9310-97719B632BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF14AD47-D0AF-4B72-A5CA-A2FA9F1F63A4}
+	EndGlobalSection
+EndGlobal
