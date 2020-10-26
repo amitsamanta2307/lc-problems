@@ -19,30 +19,29 @@ namespace LCChallengeSolutions
          */
         public IList<IList<int>> CombinationSum(int[] candidates, int target)
         {
-            IList<IList<int>> result = new List<IList<int>>();
-            IList<int> list = new List<int>();
+            var result = new List<IList<int>>();
 
-            Recursion(0, target, 0, candidates, list, result);
+            Recursion(0, target, candidates, new List<int>(), result);
             
             return result;
         }
 
-        protected void Recursion(int start, int target, int sum, int[] candidates, IList<int> list, IList<IList<int>> result)
+        protected void Recursion(int start, int target, int[] candidates, IList<int> combination, IList<IList<int>> result)
         {
-            if (sum > target)
+            if (target < 0)
                 return;
 
-            if (sum == target)
+            if (target == 0)
             {
-                result.Add(new List<int>(list));
+                result.Add(new List<int>(combination));
                 return;
             }
 
             for (int i = start; i < candidates.Length; i++)
             {
-                list.Add(candidates[i]);
-                Recursion(i, target, sum + candidates[i], candidates, list, result);
-                list.RemoveAt(list.Count - 1);
+                combination.Add(candidates[i]);
+                Recursion(i, target - candidates[i], candidates, combination, result);
+                combination.RemoveAt(combination.Count - 1);
             }
         }
     }
